@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+.slide-in-right {
+    animation: slideInRight 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+.slide-out-left {
+    animation: slideOutLeft 1s ease-in-out forwards;
+    opacity: 1;
+}
+
+.slide-out-right {
+    animation: slideOutRight 1s ease-in-out forwards;
+    opacity: 1;
+}
+.product-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Ekledim */
+}
+
+.field-pair {
+    display: flex;
+    flex: 1 1 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.input-field {
+    flex: 1;
+    margin-right: 1rem; /* Ekledim */
+}
+
+.field-pair button {
+    margin-left: 1rem;
+    margin-top: 0;
+}
+
+
+
+
